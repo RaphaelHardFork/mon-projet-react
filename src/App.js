@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.css"
 import { useState } from 'react';
 
 function App() {
@@ -7,13 +6,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
           Et ensuite ?
         </p>
         <p>{counter}</p>
-        <button className="bouton" onClick={() => setCounter(counter + 1)}>Cliquez sur moué</button>
+        <button className="btn btn-primary" onClick={() => setCounter(counter + 1)}>Cliquez sur moué</button>
         <a
           className="App-link"
           href="https://reactjs.org"
